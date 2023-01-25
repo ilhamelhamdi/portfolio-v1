@@ -1,3 +1,5 @@
 import { AboutModule } from "@/modules";
 
-export const AboutPage: React.FC = () => <AboutModule />;
+const AboutPage: React.FC = () => <AboutModule />;
+
+export default AboutPage

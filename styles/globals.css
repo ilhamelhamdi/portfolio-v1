@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Clash Display Variable";
+    src: url("../public/assets/fonts/ClashDisplay-Variable.ttf");
+  }
+}
+
+body {
+  @apply m-0;
+}
+
+.dark {
+  @apply bg-black;
+}
+
+.noise {
+  position: fixed;
+  z-index: 9999;
+  top: -50%;
+  left: -50%;
+  height: 600vh;
+  width: 600vw;
+  opacity: 25%;
+  background-image: url("/assets/images/noise.png");
+  background-size: 200px;
+  background-repeat: repeat;
+  pointer-events: none;
+  animation: grain 7s steps(10) infinite;
+}
+
+@keyframes grain {
+  from {
+    top: -300%;
+    left: -300%;
+  }
+  10% {
+    top: -200%;
+    left: -200%;
+  }
+  20% {
+    top: -100%;
+    left: -100%;
+  }
+  30% {
+    top: -250%;
+    left: -250%;
+  }
+  40% {
+    top: -30%;
+    left: -290%;
+  }
+  50% {
+    top: -120%;
+    left: -130%;
+  }
+  60% {
+    top: -210%;
+    left: -330%;
+  }
+  70% {
+    top: -110%;
+    left: -30%;
+  }
+  80% {
+    top: -10%;
+    left: -230%;
+  }
+  90% {
+    top: -100%;
+    left: -180%;
+  }
+  to {
+    top: -150%;
+    left: -150%;
+  }
+}

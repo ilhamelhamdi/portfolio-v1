@@ -1,3 +1,5 @@
 import { HomeModule } from "@/modules";
 
-export const HomePage: React.FC = () => <HomeModule />;
+const HomePage: React.FC = () => <HomeModule />;
+
+export default HomePage
