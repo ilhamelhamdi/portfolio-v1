@@ -13,7 +13,10 @@ export const AboutOverview: React.FC = () => {
           </span>
           <span>For whatever reason it is you are here, welcome.</span>
         </p>
-        <Link href="/about" className="text-[48px] font-bold text-tosca dark:text-salmon mt-10">
+        <Link
+          href="/about"
+          className="text-[48px] font-bold text-tosca dark:text-salmon mt-10"
+        >
           About Me
         </Link>
       </div>

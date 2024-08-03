@@ -1,4 +1,4 @@
-export interface HeaderProps  {
-    isMenuOpen: boolean;
-    toggleMenu: () => void;
+export interface HeaderProps {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
 }

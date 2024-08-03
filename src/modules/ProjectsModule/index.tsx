@@ -1,5 +1,7 @@
 export const ProjectsModule: React.FC = () => {
-  return <>
-    <div>Projects Page</div>
-  </>;
+  return (
+    <>
+      <div>Projects Page</div>
+    </>
+  );
 };

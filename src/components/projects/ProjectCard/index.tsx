@@ -19,10 +19,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div
         className={classNames(
           "w-[55%] z-10 absolute inset-y-0 flex flex-col gap-y-4 max-w-[80%]",
-          { "left-0": !isOdd, "right-0 text-right items-end":  isOdd }
+          { "left-0": !isOdd, "right-0 text-right items-end": isOdd }
         )}
       >
-        <Link href={"/"} className="text-[48px] text-tosca dark:text-salmon font-bold hover:underline w-fit tracking-wide">
+        <Link
+          href={"/"}
+          className="text-[48px] text-tosca dark:text-salmon font-bold hover:underline w-fit tracking-wide"
+        >
           {project.title}
         </Link>
         <p className="text-xl text-black dark:text-white p-4 bg-white/10 shadow-xl backdrop-blur border border-white tracking-wide">

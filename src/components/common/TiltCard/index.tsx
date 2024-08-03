@@ -52,7 +52,6 @@ const TiltCard: React.FC<TiltCardProps> = (props) => {
       inner.style.transform = "rotateX(0deg) rotateY(0deg)";
     };
 
-
     const onMouseEnterHandler = (e: MouseEvent) => {
       mouse.setOrigin(container);
       update(e);
@@ -72,7 +71,11 @@ const TiltCard: React.FC<TiltCardProps> = (props) => {
   }, [containerRef, innerRef]);
 
   return (
-    <div ref={containerRef} className={`${props.className}`} style={{ perspective: "48px" }}>
+    <div
+      ref={containerRef}
+      className={`${props.className}`}
+      style={{ perspective: "48px" }}
+    >
       <div ref={innerRef} className="transition-transform duration-100">
         {props.children}
       </div>

@@ -8,11 +8,14 @@ import { Menu } from "../Menu";
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { theme } = useContext(ThemeContext);
   const [isMenuOpen, setMenuOpen] = useState(false);
-  
+
   return (
     <div className={theme + " min-h-screen"}>
       <Menu isOpen={isMenuOpen} />
-      <Header isMenuOpen={isMenuOpen} toggleMenu={() => setMenuOpen(!isMenuOpen)} />
+      <Header
+        isMenuOpen={isMenuOpen}
+        toggleMenu={() => setMenuOpen(!isMenuOpen)}
+      />
       {children}
       <Footer />
       <div className="noise" />
