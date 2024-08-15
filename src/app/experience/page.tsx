@@ -1,4 +1,4 @@
-import { ExperienceModule } from "../modules";
+import { ExperienceModule } from "@/modules";
 
 const ExperiencePage: React.FC = () => <ExperienceModule />;
 

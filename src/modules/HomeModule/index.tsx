@@ -1,3 +1,5 @@
+"use client";
+
 import { AboutOverview } from "./AboutOverview";
 import { FeaturedProjects } from "./FeaturedProjects";
 import { HeroSection } from "./HeroSection";

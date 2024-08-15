@@ -1,4 +1,5 @@
-import { use, useEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import { TiltCardProps } from "./interface";
 
 const TiltCard: React.FC<TiltCardProps> = (props) => {
@@ -18,7 +19,6 @@ const TiltCard: React.FC<TiltCardProps> = (props) => {
       const elementRect = e.getBoundingClientRect();
       this._x = elementRect.x + Math.floor(elementRect.width / 2);
       this._y = elementRect.y + Math.floor(elementRect.height / 2);
-      console.log(`origin : (${this._x},${this._y})`);
     },
     show: function () {
       return "(" + this.x + ", " + this.y + ")";

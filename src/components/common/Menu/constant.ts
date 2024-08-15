@@ -9,10 +9,10 @@ export const MENU_ITEMS: MenuItem[] = [
     title: "About",
     url: "/about",
   },
-  {
-    title: "Experience",
-    url: "/experience",
-  },
+  // {
+  //   title: "Experience",
+  //   url: "/experience",
+  // },
   {
     title: "Projects",
     url: "/projects",

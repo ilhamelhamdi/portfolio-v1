@@ -1,35 +1,41 @@
+"use client";
+
 import { Logo, MoonIcon, SunIcon } from "@/icons";
 import Link from "next/link";
-import { useContext } from "react";
-import { HeaderProps } from "./interface";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "@/contexts";
+import { MenuOpenContext } from "@/contexts/MenuOpenContext";
+import { HamburgerMenu } from "./HamburgerMenu";
+import anime from "animejs";
+import { TransitionLink } from "@/components/utils/TransitionLink";
 
-export const Header: React.FC<HeaderProps> = (props) => {
+export const Header: React.FC = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+  const { isMenuOpen } = useContext(MenuOpenContext);
+
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const toggleMenu = () => {
-    props.toggleMenu();
-  };
+  useEffect(() => {
+    anime({
+      targets: "header",
+      translateY: [-100, 0],
+      easing: "easeOutExpo",
+      duration: 1000,
+    })
+  }, []);
 
   return (
     <header
-      className={`w-full h-[64px] md:h-[80px] flex justify-between items-center px-[24px] md:px-[60px] z-30 fixed ${
-        props.isMenuOpen ? "bg-transparent" : "bg-black/5 dark:bg-white/5"
+      className={`w-full h-[64px] md:h-[80px] flex justify-between items-center px-[24px] md:px-[60px] z-30 fixed backdrop-blur-[3px] ${
+        isMenuOpen ? "bg-transparent" : "bg-black/10 dark:bg-white/10"
       }`}
     >
-      <Link href={"/"}>
-        <Logo className="fill-dark-blue dark:fill-rose h-[32px] md:h-[48px]" />
-      </Link>
-      <div
-        className="flex flex-col space-y-2 cursor-pointer"
-        onClick={toggleMenu}
-      >
-        <div className="block w-[48px] md:w-[96px] h-[2px] md:h-[6px] bg-dark-blue dark:bg-rose"></div>
-        <div className="block w-[48px] md:w-[96px] h-[2px] md:h-[6px] bg-dark-blue dark:bg-rose"></div>
-      </div>
+      <TransitionLink href={"/"}>
+        <Logo className="h-[32px] md:h-[48px] fill-dark-blue dark:fill-rose" />
+      </TransitionLink>
+      <HamburgerMenu />
       <div onClick={toggleTheme} className="cursor-pointer">
         <SunIcon className="hidden dark:block h-[32px] md:h-[48px]" />
         <MoonIcon className="block dark:hidden h-[32px] md:h-[48px]" />

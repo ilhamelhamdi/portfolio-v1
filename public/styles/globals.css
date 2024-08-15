@@ -9,6 +9,10 @@
   }
 }
 
+* {
+  @apply box-border z-[5];
+}
+
 body {
   @apply m-0 font-clash;
 }
