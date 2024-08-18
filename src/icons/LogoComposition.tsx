@@ -4,8 +4,19 @@ interface LogoCompositionProps extends React.SVGAttributes<HTMLOrSVGElement> {
 }
 
 export const LogoCompostion: React.FC<LogoCompositionProps> = (props) => (
-  <svg viewBox="0 0 444 444" fill="none" xmlns="http://www.w3.org/2000/svg" className={props.className}>
-    <circle cx="222" cy="222" r="222" className={props.backgroundClass} id={props.id}/>
+  <svg
+    viewBox="0 0 444 444"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+  >
+    <circle
+      cx="222"
+      cy="222"
+      r="222"
+      className={props.backgroundClass}
+      id={props.id}
+    />
     <path
       d="M171.87 227.43V292.5H135.39V240.66C135.39 233.183 133.96 227.757 129.745 224.324C125.629 220.973 119.212 219.84 110.16 219.84C101.027 219.84 94.8496 220.913 91.0111 224.097C87.07 227.366 85.98 232.506 85.98 239.4V292.5H49.5V189.5H85.98V220.29C85.98 221.118 86.6516 221.79 87.48 221.79H89.58C90.3014 221.79 90.9207 221.276 91.0541 220.567C92.6931 211.861 96.3599 203.626 102.812 197.575C109.241 191.547 118.568 187.56 131.79 187.56C145.53 187.56 155.494 191.907 162.034 198.946C168.591 206.004 171.87 215.945 171.87 227.43Z"
       className={props.foregroundClass}

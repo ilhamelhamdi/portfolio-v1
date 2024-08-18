@@ -48,7 +48,7 @@ export const TransitionScreen: React.FC = () => {
       className="fixed h-screen top-0 left-0 opacity-0 w-screen z-50 bg-dark-blue dark:bg-black flex justify-center items-center"
     >
       <div ref={logoRef} id="logo-transition-screen" className="opacity-0">
-        <Logo className="fill-cream dark:fill-white h-[180px] md:h-[240px]"/>
+        <Logo className="fill-cream dark:fill-white h-[100px] sm:h-[180px] md:h-[240px]" />
       </div>
     </div>
   );

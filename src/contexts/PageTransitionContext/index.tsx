@@ -15,10 +15,14 @@ export const PageTrasitionContext = createContext<PageTransitionContextInter>(
   initialPageTransition
 );
 
-export const PageTransitionProvider: React.FC<PageTransitionProviderProps> = ({children}) => {
+export const PageTransitionProvider: React.FC<PageTransitionProviderProps> = ({
+  children,
+}) => {
   const [isTransitioning, setTransitioning] = useState<boolean>(false);
   return (
-    <PageTrasitionContext.Provider value={{isTransitioning, setTransitioning}}>
+    <PageTrasitionContext.Provider
+      value={{ isTransitioning, setTransitioning }}
+    >
       {children}
     </PageTrasitionContext.Provider>
   );

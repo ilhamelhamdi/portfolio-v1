@@ -35,16 +35,16 @@ export const HeroAbout: React.FC = () => {
       );
   }, []);
   return (
-    <section className="relative h-screen container mx-auto max-w-screen-lg flex flex-col justify-center ">
+    <section className="relative h-screen container max-w-screen-lg mx-auto px-8 lg:px-4  flex flex-col justify-center items-center sm:items-start">
       <h1
         ref={headlineRef}
-        className="font-bold text-[160px] text-dark-blue dark:text-salmon tracking-wider z-10 w-fit"
+        className="w-full font-bold text-headline text-dark-blue dark:text-salmon tracking-wider z-10"
       >
         Hello!
       </h1>
       <p
         ref={paragraphRef}
-        className="text-[32px] dark:text-white w-[60%] tracking-wide z-10"
+        className="mb-10 sm:mb-0 text-body-big dark:text-white sm:w-[60%] tracking-wide z-10"
       >
         My name is{" "}
         <span className="font-bold dark:text-rose">Ilham Abdillah Alhamdi</span>
@@ -56,7 +56,7 @@ export const HeroAbout: React.FC = () => {
         </Link>
         .
       </p>
-      <TiltCard className="absolute my-auto right-0">
+      <TiltCard className="sm:absolute sm:my-auto sm:right-0 sm:mr-8 lg:mr-0 px-8 w-[320px] md:w-[400px] lg:w-[480px]">
         <div
           ref={imageRef}
           className="bg-cream dark:bg-dark-blue shadow-[inset_0_20px_40px_-10px_rgba(0,0,0,0.2)] rounded overflow-clip filter"

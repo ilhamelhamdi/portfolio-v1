@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
       translateY: [-100, 0],
       easing: "easeOutExpo",
       duration: 1000,
-    })
+    });
   }, []);
 
   return (
@@ -37,8 +37,8 @@ export const Header: React.FC = () => {
       </TransitionLink>
       <HamburgerMenu />
       <div onClick={toggleTheme} className="cursor-pointer">
-        <SunIcon className="hidden dark:block h-[32px] md:h-[48px]" />
-        <MoonIcon className="block dark:hidden h-[32px] md:h-[48px]" />
+        <SunIcon className="hidden dark:block h-[32px] w-[32px] md:h-[48px] md:w-[48px]" />
+        <MoonIcon className="block dark:hidden h-[32px] w-[32px] md:h-[48px] md:w-[48px]" />
       </div>
     </header>
   );

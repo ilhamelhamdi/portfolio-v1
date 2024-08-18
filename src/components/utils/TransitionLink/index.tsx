@@ -17,11 +17,15 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
   onClick,
 }) => {
   const router = useRouter();
-  const {isTransitioning, setTransitioning} = useContext(PageTrasitionContext);
+  const { isTransitioning, setTransitioning } =
+    useContext(PageTrasitionContext);
 
-  const sleep = async (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+  const sleep = async (ms: number) =>
+    new Promise((resolve) => setTimeout(resolve, ms));
 
-  const handleTransition = async (e: React.MouseEvent<HTMLAnchorElement, MouseEvent> ) => {
+  const handleTransition = async (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     e.preventDefault();
     setTransitioning(true);
     await sleep(200);

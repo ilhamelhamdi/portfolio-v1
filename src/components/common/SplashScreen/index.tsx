@@ -60,7 +60,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = (props) => {
         <LogoCompostion
           backgroundClass="fill-dark-blue dark:fill-cream"
           foregroundClass="stroke-cream dark:stroke-dark-blue stroke-[6px]"
-          className="h-[180px] md:h-[240px]"
+          className="h-[100px] sm:h-[180px] md:h-[240px]"
         />
       </div>
     </div>

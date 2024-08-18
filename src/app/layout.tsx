@@ -5,7 +5,6 @@ import { Providers } from "./providers";
 import type { Metadata } from "next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Suspense } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
