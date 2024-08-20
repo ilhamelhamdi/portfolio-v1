@@ -1,34 +1,34 @@
 import { Project } from "@/models/project";
-import exampleImage from "../../public/assets/images/tautin-1.png";
 
 export const PROJECTS: Project[] = [
-  {
-    title: "Urbania",
-    slug: "urbania",
-    description:
-      "A peer-to-peer e-commerce platform for selling and buying vintage and preloved clothes. This is the revamped project of Fashionpedia with some advanced technologies and techniques implemented, such as gRPC, Kafka, and Redis.",
-    techStack: [
-      "NestJS",
-      "SpringBoot",
-      "PostgreSQL",
-      "Kafka",
-      "Redis",
-      "NextJS",
-      "TailwindCSS",
-    ],
-    year: "2024",
-    demo: "https://urbania.my.id/",
-    github: "https://github.com/ilhamelhamdi/urbania",
-    role: "Fullstack Developer",
-    images: [
-      {
-        src: exampleImage,
-        height: 400,
-        width: 400,
-        alt: "Urbania",
-      },
-    ],
-  },
+  // {
+  //   title: "Urbania",
+  //   slug: "urbania",
+  //   description:
+  //     "A peer-to-peer e-commerce platform for selling and buying vintage and preloved clothes. This is the revamped project of Fashionpedia with some advanced technologies and techniques implemented, such as gRPC, Kafka, and Redis.",
+  //   techStack: [
+  //     "NestJS",
+  //     "SpringBoot",
+  //     "PostgreSQL",
+  //     "Kafka",
+  //     "Redis",
+  //     "NextJS",
+  //     "TailwindCSS",
+  //   ],
+  //   year: "2024",
+  //   demo: "https://urbania.my.id/",
+  //   github: "https://github.com/ilhamelhamdi/urbania",
+  //   role: "Fullstack Developer",
+  //   images: [
+  //     {
+  //       type: "image",
+  //       src: "/assets/images/tautin-1.png",
+  //       height: 1080,
+  //       width: 1080,
+  //       alt: "Urbania",
+  //     },
+  //   ],
+  // },
   {
     title: "Tautin",
     slug: "tautin",
@@ -41,38 +41,40 @@ export const PROJECTS: Project[] = [
     role: "Fullstack Developer",
     images: [
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
+        type: "image",
+        src: "/assets/images/tautin-1.png",
+        height: 1080,
+        width: 1080,
         alt: "Tautin",
       },
     ],
   },
-  {
-    title: "Fashionpedia",
-    slug: "fashionpedia",
-    description:
-      "A marketplace for those who love selling and buying thrifted clothes. This is the first project that implemented microservice style architecture. I built a service for managing listing and order.",
-    techStack: ["SpringBoot", "PostgreSQL", "HTML", "CSS", "Javascript"],
-    year: "2024",
-    demo: "https://fashionpedia.my.id/",
-    github: "https://github.com/Fashionpedia-A2",
-    role: "Fullstack Developer",
-    collaborator: [
-      { name: "Fredo", github: "https://github.com/Frmeta" },
-      { name: "Nabil", github: "https://github.com/Nabilcodes" },
-      { name: "Rafi", github: "https://github.com/RafGhan" },
-      { name: "Sefriano", github: "https://github.com/riorio805" },
-    ],
-    images: [
-      {
-        src: exampleImage,
-        height: 400,
-        width: 400,
-        alt: "Fashionpedia",
-      },
-    ],
-  },
+  // {
+  //   title: "Fashionpedia",
+  //   slug: "fashionpedia",
+  //   description:
+  //     "A marketplace for those who love selling and buying thrifted clothes. This is the first project that implemented microservice style architecture. I built a service for managing listing and order.",
+  //   techStack: ["SpringBoot", "PostgreSQL", "HTML", "CSS", "Javascript"],
+  //   year: "2024",
+  //   demo: "https://fashionpedia.my.id/",
+  //   github: "https://github.com/Fashionpedia-A2",
+  //   role: "Fullstack Developer",
+  //   collaborator: [
+  //     { name: "Fredo", github: "https://github.com/Frmeta" },
+  //     { name: "Nabil", github: "https://github.com/Nabilcodes" },
+  //     { name: "Rafi", github: "https://github.com/RafGhan" },
+  //     { name: "Sefriano", github: "https://github.com/riorio805" },
+  //   ],
+  //   images: [
+  //     {
+  //       type: "image",
+  //       src: "/assets/images/tautin-1.png",
+  //       height: 1080,
+  //       width: 1080,
+  //       alt: "Fashionpedia",
+  //     },
+  //   ],
+  // },
   {
     title: "Bukoo",
     slug: "bukoo",
@@ -80,7 +82,7 @@ export const PROJECTS: Project[] = [
     techStack: ["Django", "HTML", "CSS", "JavaScript"],
     year: "2023",
     github: "https://github.com/B03-PBP-2023/bukoo",
-    demo: "https://bukoo.azurewebsites.net/",
+    demo: "https://bukoo-production.up.railway.app/",
     role: "Fullstack Developer",
     collaborator: [
       { name: "Sekar", github: "https://github.com/arumasekar" },
@@ -90,10 +92,45 @@ export const PROJECTS: Project[] = [
     ],
     images: [
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
+        type: "image",
+        src: "/assets/images/bukoo/1-landing-page.png",
+        height: 1080,
+        width: 1080,
         alt: "Bukoo",
+      },
+      {
+        type: "image",
+        src: "/assets/images/bukoo/2-book-detail.png",
+        height: 1080,
+        width: 1080,
+        alt: "Bukoo",
+      },
+    ],
+  },
+  {
+    title: "BETIS 2023 Website",
+    slug: "betis-2023-website",
+    description:
+      "A website providing free guidance services for prospective students to prepare for university admission. In this project, I took on the role of Frontend Developer to build the About page.",
+    techStack: ["NextJS", "TailwindCSS"],
+    demo: "https://betis2023.vercel.app/",
+    github: "https://github.com/BETIS-Fasilkom-UI/BETIS23-FE",
+    role: "Frontend Developer",
+    year: "2023",
+    images: [
+      {
+        type: "image",
+        src: "/assets/images/betis-2023/1-landing-page.png",
+        height: 1080,
+        width: 1920,
+        alt: "BETIS Fasilkom UI 2023's Website",
+      },
+      {
+        type: "video",
+        src: "/assets/images/betis-2023/2-about-page.mp4",
+        height: 1080,
+        width: 1920,
+        alt: "BETIS Fasilkom UI 2023's Website",
       },
     ],
   },
@@ -114,29 +151,32 @@ export const PROJECTS: Project[] = [
     ],
     images: [
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
-        alt: "Bukoo Mobile",
+        type: "image",
+        src: "/assets/images/bukoo-mobile/4.jpg",
+        height: 1080,
+        width: 1080,
+        alt: "Bukoo Mobile's mockup",
       },
-    ],
-  },
-  {
-    title: "BETIS 2023 Website",
-    slug: "betis-2023-website",
-    description:
-      "A website providing free guidance services for prospective students to prepare for university admission. In this project, I took on the role of Frontend Developer to build the About page.",
-    techStack: ["NextJS", "TailwindCSS"],
-    demo: "https://betis2023.vercel.app/",
-    github: "https://github.com/BETIS-Fasilkom-UI/BETIS23-FE",
-    role: "Frontend Developer",
-    year: "2023",
-    images: [
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
-        alt: "BETIS Fasilkom UI 2023's Website",
+        type: "video",
+        src: "/assets/images/bukoo-mobile/1.mp4",
+        height: 1080,
+        width: 1080,
+        alt: "Bukoo Mobile's home page",
+      },
+      {
+        type: "video",
+        src: "/assets/images/bukoo-mobile/2.mp4",
+        height: 1080,
+        width: 1080,
+        alt: "Bukoo Mobile's book detail page",
+      },
+      {
+        type: "video",
+        src: "/assets/images/bukoo-mobile/3.mp4",
+        height: 1080,
+        width: 1080,
+        alt: "Bukoo Mobile's discussion forum page",
       },
     ],
   },
@@ -157,15 +197,17 @@ export const PROJECTS: Project[] = [
     ],
     images: [
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
+        type: "image",
+        src: "/assets/images/tautin-1.png",
+        height: 1080,
+        width: 1080,
         alt: "Satset MOOC",
       },
       {
-        src: exampleImage,
-        height: 400,
-        width: 400,
+        type: "image",
+        src: "/assets/images/tautin-1.png",
+        height: 1080,
+        width: 1080,
         alt: "Satset MOOC",
       },
     ],

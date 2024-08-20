@@ -23,6 +23,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     </TransitionLink>
   );
 
+  const thumbnail = project.images[0];
+
   return (
     <div
       className={classNames(
@@ -39,13 +41,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         className="md:w-[55%] hover:z-20 scroll-reveal"
       >
         <TiltCard className="drop-shadow-xl">
-          <Image
-            src={project.images[0].src}
-            height={project.images[0].height}
-            width={project.images[0].width}
-            alt={project.images[0].alt}
-            className="w-full z-30 filter grayscale hover:filter-none transition-all duration-100"
-          ></Image>
+          {thumbnail.type === "image" ? (
+            <Image
+              src={thumbnail.src}
+              height={thumbnail.height}
+              width={thumbnail.width}
+              alt={thumbnail.alt}
+              className="w-full z-30 filter grayscale hover:filter-none transition-all duration-100"
+            ></Image>
+          ) : (
+            <video
+              src={thumbnail.src}
+              autoPlay
+              loop
+              muted
+              className="w-full z-30 filter grayscale hover:filter-none transition-all duration-100"
+            ></video>
+          )}
         </TiltCard>
       </TransitionLink>
       <div

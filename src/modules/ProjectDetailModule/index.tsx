@@ -63,16 +63,31 @@ const ProjectDetailModule: React.FC<ProjectDetailModuleProps> = (props) => {
       </div>
       <section
         ref={projectImagesRef}
-        className="container max-w-screen-lg mx-auto px-6 my-20 flex flex-col items-center gap-y-6"
+        className="container max-w-screen-lg mx-auto px-10 my-20 flex flex-col items-center gap-y-6"
       >
-        {project.images.map((image, index) => (
-          <Image
-            key={index}
-            {...image}
-            alt={image.alt}
-            className="w-full shadow-lg"
-          />
-        ))}
+        {project.images.map((image, index) =>
+          image.type === "image" ? (
+            <Image
+              key={index}
+              src={image.src}
+              height={image.height}
+              width={image.width}
+              alt={image.alt}
+              className="w-full shadow-lg"
+            />
+          ) : (
+            <video
+              key={index}
+              src={image.src}
+              height={image.height}
+              width={image.width}
+              autoPlay
+              loop
+              muted
+              className="w-full shadow-lg"
+            />
+          )
+        )}
       </section>
       <section className="flex flex-col justify-center items-center my-20">
         <h2 className="text-button">NEXT PROJECT</h2>

@@ -92,7 +92,10 @@ export const LetterAnimation: React.FC<LetterAnimationProps> = (props) => {
           className="word-wrapper inline w-fit h-[1em] leading-none"
         >
           {word.split("").map((letter, index) => (
-            <span key={index} className="letter-wrapper inline-block overflow-hidden relative">
+            <span
+              key={index}
+              className="letter-wrapper inline-block overflow-hidden relative"
+            >
               <span
                 data-letter={letter}
                 className={`letter-inside inline-block whitespace-pre-wrap relative translate-y-[2em] before:content-[attr(data-letter)] before:block before:absolute before:translate-y-[-1em]`}
