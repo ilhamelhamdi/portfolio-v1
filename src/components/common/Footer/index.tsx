@@ -20,14 +20,14 @@ const CONTACTS: ContactLinkProps[] = [
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="container mx-auto max-w-screen-lg py-10">
-      <span className="scroll-reveal text-[48px] text-dark-blue dark:text-salmon">
+    <footer className="w-full container mx-auto max-w-screen-lg py-4 lg:py-10 px-6 sm:px-8 mb-[10vh] tracking-wider">
+      <span className="scroll-reveal block text-button text-dark-blue dark:text-salmon">
         Want to start a Project?
       </span>
       <Link
         href="mailto:ilham.abdillah.alhamdi@gmail.com"
         target="__blank"
-        className="text-[120px] font-bold text-tosca dark:text-rose"
+        className="block text-[40px] min-[480px]:text-[64px] sm:text-[80px] md:text-[120px] lg:text-[160px] font-bold text-tosca dark:text-rose mb-4"
       >
         <LetterAnimation
           text="Contact Me"
@@ -35,13 +35,9 @@ export const Footer: React.FC = () => {
           className="after:bg-tosca dark:after:bg-rose"
         />
       </Link>
-      <div className="flex gap-x-8 text-[24px] font-medium text-dark-blue dark:text-rose fill-dark-blue dark:fill-rose">
+      <div className="flex gap-x-2 sm:gap-x-8 text-body font-medium text-dark-blue dark:text-rose fill-dark-blue dark:fill-rose">
         {CONTACTS.map((contact) => (
-          <ContactLink
-            key={contact.link}
-            {...contact}
-            className="scroll-reveal"
-          />
+          <ContactLink key={contact.link} {...contact} />
         ))}
       </div>
     </footer>

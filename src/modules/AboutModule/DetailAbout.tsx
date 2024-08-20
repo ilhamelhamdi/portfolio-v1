@@ -1,10 +1,6 @@
-"use client";
-
 import { LetterAnimation } from "@/components/utils/LetterAnimation";
-import useScrollReveal from "@/hooks/useScrollReveal";
 
 export const DetailAbout: React.FC = () => {
-  useScrollReveal();
   const techStack = [
     "JavaScript (ES6++)",
     "TypeScript",
@@ -20,7 +16,7 @@ export const DetailAbout: React.FC = () => {
     "MongoDB",
   ];
   return (
-    <section className="container mx-auto max-w-screen-md text-[32px] flex flex-col gap-y-[180px] tracking-wide dark:text-white mb-[150px]">
+    <section className="container mx-auto max-w-screen-md px-8 text-body-big flex flex-col gap-y-[80px] lg:gap-y-[180px] tracking-wide dark:text-white mb-[80px] lg:mb-[150px]">
       <p className="scroll-reveal font-medium">
         I am a software engineer specializing in web development with a focus on
         frontend technologies.
@@ -41,7 +37,7 @@ export const DetailAbout: React.FC = () => {
           Here are a few technology that I&apos;ve been working on my projects
           recently :
         </span>
-        <ul className="grid grid-cols-2 list-disc mx-8 mt-4">
+        <ul className="grid grid-cols-2 list-disc mx-2 sm:mx-8 mt-4 gap-x-2">
           {techStack.map((tech) => (
             <li key={tech} className="scroll-reveal">
               {tech}
@@ -58,7 +54,7 @@ export const DetailAbout: React.FC = () => {
         I want to leave a positive mark behind me and create something impactful
         for people I work with.
       </p>
-      <span className="font-bold text-[172px] text-dark-blue dark:text-rose">
+      <span className="font-bold text-title text-dark-blue dark:text-rose flex justify-center">
         <LetterAnimation text="READY?" />
       </span>
       <p className="scroll-reveal">I can make your new project comes to life</p>

@@ -25,7 +25,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           {children}
           <Footer />
           <TransitionScreen />
-          <PointerFollower/>
+          <PointerFollower />
         </>
       )}
       <div className="noise z-10" />

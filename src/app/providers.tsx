@@ -2,6 +2,7 @@
 import { ThemeProvider } from "@/contexts";
 import { MenuOpenProvider } from "@/contexts/MenuOpenContext";
 import { PageTransitionProvider } from "@/contexts/PageTransitionContext";
+import ScrollRevealProvider from "@/hooks/scrollReveal/ScrollRevealProvider";
 import { ReactNode } from "react";
 
 type ProviderComponent = React.FC<{ children: ReactNode }>;
@@ -17,4 +18,5 @@ export const Providers = compose([
   ThemeProvider,
   MenuOpenProvider,
   PageTransitionProvider,
+  ScrollRevealProvider,
 ]);

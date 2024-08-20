@@ -14,7 +14,8 @@ export interface Project {
     github: string;
   }[];
   images: {
-    src: string | StaticImageData;
+    type: "image" | "video";
+    src: string;
     height: number;
     width: number;
     alt: string;
