@@ -1,34 +1,92 @@
 import { Project } from "@/models/project";
 
 export const PROJECTS: Project[] = [
-  // {
-  //   title: "Urbania",
-  //   slug: "urbania",
-  //   description:
-  //     "A peer-to-peer e-commerce platform for selling and buying vintage and preloved clothes. This is the revamped project of Fashionpedia with some advanced technologies and techniques implemented, such as gRPC, Kafka, and Redis.",
-  //   techStack: [
-  //     "NestJS",
-  //     "SpringBoot",
-  //     "PostgreSQL",
-  //     "Kafka",
-  //     "Redis",
-  //     "NextJS",
-  //     "TailwindCSS",
-  //   ],
-  //   year: "2024",
-  //   demo: "https://urbania.my.id/",
-  //   github: "https://github.com/ilhamelhamdi/urbania",
-  //   role: "Fullstack Developer",
-  //   images: [
-  //     {
-  //       type: "image",
-  //       src: "/assets/images/tautin-1.png",
-  //       height: 1080,
-  //       width: 1080,
-  //       alt: "Urbania",
-  //     },
-  //   ],
-  // },
+  {
+    title: "AI Report Generator @ Klinik Pintar",
+    slug: "ai-report-generator-klinik-pintar",
+    description: "AI-driven report generator web app for Klinik Pintar using Next.js with a Retrieval-Augmented Generation (RAG) technique, enabling faster and more accurate report insights.",
+    techStack: ["NextJS", "TailwindCSS", "PostgreSQL", "Docker", "OpenAI SDK"],
+    year: "2025",
+    github: "https://github.com/klinikpintar/ai-report-generator",
+    demo: "https://ai-report-generator-staging.up.railway.app",
+    role: "Scrum Master & Fullstack Developer",
+    images: [
+      {
+        type: "image",
+        src: "/assets/images/ai-report-generator/1.png",
+        height: 1080,
+        width: 1960,
+        alt: "Chat Room AI Report Generator"
+      },
+      {
+        type: "video",
+        src: "/assets/images/ai-report-generator/2.mp4",
+        height: 1080,
+        width: 1960,
+        alt: "Walkthrough Chat to Export"
+      },
+      {
+        type: "image",
+        src: "/assets/images/ai-report-generator/3.png",
+        height: 1080,
+        width: 1960,
+        alt: "Landing Page Admin"
+      },
+      {
+        type: "image",
+        src: "/assets/images/ai-report-generator/4.png",
+        height: 1080,
+        width: 1960,
+        alt: "AI Config Admin"
+      },
+      {
+        type: "image",
+        src: "/assets/images/ai-report-generator/5.png",
+        height: 1080,
+        width: 1960,
+        alt: "User Management Page Admin"
+      },
+    ]
+  },
+  {
+    title: "Al Utsmani Website",
+    slug: "alutsmani",
+    description: "Revamped the company profile website for Yayasan Al Utsmani with features like blog, program registration, and automated donations via payment gateway. Built an admin app to manage users, content, and certificates, streamlining workflows and improving service.",
+    techStack: ["Next.js", "Django", "Celery", "PostgreSQL", "Firebase"],
+    year: "2024",
+    demo: "https://dev.alutsmani.com/",
+    role: "Vice Lead Developer",
+    images: [
+      {
+        type: "image",
+        src: "/assets/images/utsmani/1.png",
+        height: 1080,
+        width: 1960,
+        alt: "Landing Page Utsmani"
+      },
+      {
+        type: "image",
+        src: "/assets/images/utsmani/2.png",
+        height: 1080,
+        width: 1960,
+        alt: "List of Program Education Page Utsmani",
+      },
+      {
+        type: "video",
+        src: "/assets/images/utsmani/3.mkv",
+        height: 1080,
+        width: 1960,
+        alt: "Program Education Registration Page Utsmani",
+      },
+      {
+        type: "image",
+        src: "/assets/images/utsmani/4.png",
+        height: 1080,
+        width: 1960,
+        alt: "Admin View Utsmani",
+      },
+    ]
+  },
   {
     title: "Tautin",
     slug: "tautin",
@@ -180,36 +238,36 @@ export const PROJECTS: Project[] = [
       },
     ],
   },
-  {
-    title: "Satset MOOC",
-    slug: "satset-mooc",
-    description:
-      "An open online course website. Create your own courses with lectures and interactive quizzes as Instructor. Enroll verified courses and take lectures and quizzes as a Student.This project is a final project collaboration at Software Engineering Academy COMPFEST 14. I took part in the Frontend side.",
-    techStack: ["ReactJS", "TailwindCSS"],
-    year: "2022",
-    demo: "https://satset-mooc.vercel.app/",
-    github: "https://github.com/ilhamelhamdi/frontend-satset",
-    role: "Frontend Developer",
-    collaborator: [
-      { name: "Fathoni", github: "https://github.com/githubnyathoni" },
-      { name: "Evan", github: "https://github.com/evan-aurelrius" },
-      { name: "Adnan", github: "https://github.com/alfa000" },
-    ],
-    images: [
-      {
-        type: "image",
-        src: "/assets/images/tautin-1.png",
-        height: 1080,
-        width: 1080,
-        alt: "Satset MOOC",
-      },
-      {
-        type: "image",
-        src: "/assets/images/tautin-1.png",
-        height: 1080,
-        width: 1080,
-        alt: "Satset MOOC",
-      },
-    ],
-  },
+  // {
+  //   title: "Satset MOOC",
+  //   slug: "satset-mooc",
+  //   description:
+  //     "An open online course website. Create your own courses with lectures and interactive quizzes as Instructor. Enroll verified courses and take lectures and quizzes as a Student.This project is a final project collaboration at Software Engineering Academy COMPFEST 14. I took part in the Frontend side.",
+  //   techStack: ["ReactJS", "TailwindCSS"],
+  //   year: "2022",
+  //   demo: "https://satset-mooc.vercel.app/",
+  //   github: "https://github.com/ilhamelhamdi/frontend-satset",
+  //   role: "Frontend Developer",
+  //   collaborator: [
+  //     { name: "Fathoni", github: "https://github.com/githubnyathoni" },
+  //     { name: "Evan", github: "https://github.com/evan-aurelrius" },
+  //     { name: "Adnan", github: "https://github.com/alfa000" },
+  //   ],
+  //   images: [
+  //     {
+  //       type: "image",
+  //       src: "/assets/images/tautin-1.png",
+  //       height: 1080,
+  //       width: 1080,
+  //       alt: "Satset MOOC",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "/assets/images/tautin-1.png",
+  //       height: 1080,
+  //       width: 1080,
+  //       alt: "Satset MOOC",
+  //     },
+  //   ],
+  // },
 ];
