@@ -4,7 +4,8 @@ export const PROJECTS: Project[] = [
   {
     title: "AI Report Generator @ Klinik Pintar",
     slug: "ai-report-generator-klinik-pintar",
-    description: "AI-driven report generator web app for Klinik Pintar using Next.js with a Retrieval-Augmented Generation (RAG) technique, enabling faster and more accurate report insights.",
+    description:
+      "AI-driven report generator web app for Klinik Pintar using Next.js with a Retrieval-Augmented Generation (RAG) technique, enabling faster and more accurate report insights.",
     techStack: ["NextJS", "TailwindCSS", "PostgreSQL", "Docker", "OpenAI SDK"],
     year: "2025",
     github: "https://github.com/klinikpintar/ai-report-generator",
@@ -16,42 +17,43 @@ export const PROJECTS: Project[] = [
         src: "/assets/images/ai-report-generator/1.png",
         height: 1080,
         width: 1960,
-        alt: "Chat Room AI Report Generator"
+        alt: "Chat Room AI Report Generator",
       },
       {
         type: "video",
         src: "/assets/images/ai-report-generator/2.mp4",
         height: 1080,
         width: 1960,
-        alt: "Walkthrough Chat to Export"
+        alt: "Walkthrough Chat to Export",
       },
       {
         type: "image",
         src: "/assets/images/ai-report-generator/3.png",
         height: 1080,
         width: 1960,
-        alt: "Landing Page Admin"
+        alt: "Landing Page Admin",
       },
       {
         type: "image",
         src: "/assets/images/ai-report-generator/4.png",
         height: 1080,
         width: 1960,
-        alt: "AI Config Admin"
+        alt: "AI Config Admin",
       },
       {
         type: "image",
         src: "/assets/images/ai-report-generator/5.png",
         height: 1080,
         width: 1960,
-        alt: "User Management Page Admin"
+        alt: "User Management Page Admin",
       },
-    ]
+    ],
   },
   {
     title: "Al Utsmani Website",
     slug: "alutsmani",
-    description: "Revamped the company profile website for Yayasan Al Utsmani with features like blog, program registration, and automated donations via payment gateway. Built an admin app to manage users, content, and certificates, streamlining workflows and improving service.",
+    description:
+      "Revamped the company profile website for Yayasan Al Utsmani with features like blog, program registration, and automated donations via payment gateway. Built an admin app to manage users, content, and certificates, streamlining workflows and improving service.",
     techStack: ["Next.js", "Django", "Celery", "PostgreSQL", "Firebase"],
     year: "2024",
     demo: "https://dev.alutsmani.com/",
@@ -62,7 +64,7 @@ export const PROJECTS: Project[] = [
         src: "/assets/images/utsmani/1.png",
         height: 1080,
         width: 1960,
-        alt: "Landing Page Utsmani"
+        alt: "Landing Page Utsmani",
       },
       {
         type: "image",
@@ -85,7 +87,7 @@ export const PROJECTS: Project[] = [
         width: 1960,
         alt: "Admin View Utsmani",
       },
-    ]
+    ],
   },
   {
     title: "Tautin",
